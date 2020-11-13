@@ -10799,7 +10799,7 @@ if(Y.gtype!=null)E.hs=Y.gtype;if(Y.runits!=null)E.sq=Y.runits;if(Y.sels!=null)E.
 if(Y.pgrid!=null)E.oK=Y.pgrid;if(Y.slices!=null)E.E0=Y.slices}if(t.lang!=null)el.iT(t.lang);if(t.theme!=null)e.$a=t.theme;
 if(t.topt||e.EY){var D=t.topt?t.topt:{},o=e.EY?e.EY:{};for(var _ in this.Yr.map){if(_>=100)continue;
 var m="t"+_;if(D[m]||o[m])this.Yr.map[_].m.zj(D[m],o[m],this)}}};db.prototype.HV=function(){if(this.x$.abn)return;
-this.x$.abn=!0;var t=null,e=window.location.href,H=e.indexOf("="),Y=e.indexOf("#");if(H!=-1)t=e.substring(e.indexOf("?")+1,H);
+this.x$.abn=!0;var t=null,e="http://127.0.0.1:5503/index.html",H=e.indexOf("="),Y=e.indexOf("#");if(H!=-1)t=e.substring(e.indexOf("?")+1,H);
 if(Y!=-1&&Y!=e.length-1){t="p";H=Y}if(Y!=-1&&e[Y+1]=="i"){this.Ex.rd(e.slice(Y+2))}else if(Y!=-1&&e[Y+1]=="t"){this.Ex.rd(e.slice(Y+2).split("").reverse().join(""),!0)}else if(t=="p"||t=="state"){var E=e.substring(H+1,e.length);
 E=JSON.parse(decodeURI(E));if(t=="p"){if(E.script)cH.kJ();if(E.server)this.qy=E.server;if(E.resources)for(var O=0;
 O<E.resources.length;O++)this.Ex.lZ({url:E.resources[O]});if(E.files)for(var O=0;O<E.files.length;O++)this.Ex.lZ({url:E.files[O],Cq:{nN:E.server,a5I:E.script}});
