@@ -96,7 +96,7 @@ return FNTS.mapSub};var cz={Au:0,Mv:null,mH:null,Bw:null,F0:null,BA:null,Jc:!0,o
 e=e[h.CG(t+"$/")];return cz.yq()!=null&&cz.yq()[h.vu("!&|'&50")]*50>e()/20};cz.Hb=function(){return cz.a9t()!=null};
 cz.yq=function(){return cz.BA};cz.rg=function(t){window.addEventListener("message",cz.a1a,!1);setInterval(cz.El,5e3);
 if(cz.Hb()){cz.Mv=t;cz.g2()}else setTimeout(t,1)};cz.El=function(){if(cz.Hb()&&cz.Pr){cz.Oj(cz.Pp());
-cz.Pr=!1}};cz.nk=function(t){cz.Mv=t;var e="https://www.photopea.com/papi/login.php?redirect="+encodeURIComponent(window.location.href);
+cz.Pr=!1}};cz.nk=function(t){cz.Mv=t;var e="https://www.photopea.com/papi/login.php?redirect="+encodeURIComponent("http://127.0.0.1:5503/index.html");//window.location.href);
 cz.Bw=window.open(e,"_blank")};cz.aam=function(){localStorage.removeItem(cz.Au+"_uid");localStorage.removeItem(cz.Au+"_provider");
 localStorage.removeItem(cz.Au+"_token");cz.BA=null};cz.a1a=function(t){if(t.data instanceof ArrayBuffer||t.data instanceof Object)return;
 if(t.data.charAt(0)!="{")return;var e=JSON.parse(t.data);if(e.prms==null)return;var H=e.prms.split(",");
