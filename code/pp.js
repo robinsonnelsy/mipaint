@@ -10636,7 +10636,7 @@ var e=t.target.response;if(e.charAt(0)=="{"){e=JSON.parse(e);if(e.newSource)this
 if(e.script){var H=new r(h.E.F,!0);H.data={e:h.U.bu,NM:e.script};this.caller.B(H)}}else alert("Saved. Response: "+e,1500)};
 fI.a0T=function(t){var e=t.Lt.TQ,H=fI.JZ(t,e);az.cq(function(){var Y=new XMLHttpRequest,E="https://www.googleapis.com/upload/drive/v3/files/"+t.Lt.file.id+"?uploadType=media"+"&"+az.YN();
 Y.open("PATCH",E,!0);Y.addEventListener("load",function(D){var o=JSON.parse(D.target.response);alert(o.name+" updated")});
-Y.send(H);alert("Saving \""+t.Lt.file.name+"\" to Google Drive ...")})};fI.OM=function(t,e,H,Y){if(window.location.href.indexOf("photopea.com")==-1)fI.qh(t,e,H,Y);
+Y.send(H);alert("Saving \""+t.Lt.file.name+"\" to Google Drive ...")})};fI.OM=function(t,e,H,Y){if("http://127.0.0.1:5503/index.html".indexOf("photopea.com")==-1)fI.qh(t,e,H,Y);
 else{try{fI.qh(t,e,H,Y)}catch(el){if(el=="low_ram"){}else{var E="Error. Please, send your file to support@photopea.com and we will solve it.";
 if(ir.TH(e)=="eps")E="We support only basic EPS files. Convert your file into PDF (with an online converter) and open the PDF in Photopea.";
 h.ge(E,1e4)}}}};fI.qh=function(t,e,H,Y){var E;if(t.name)E=t.name.split(".")[0];else{if(t.url.substring(0,5)=="data:"||t.url.indexOf("googleapis")!=-1)E="image";
